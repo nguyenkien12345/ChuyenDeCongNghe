@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Lazy Loading And Intersection Observer</title>
+</head>
+
+<style>
+    .vh-60 {
+        height: 60vh;
+    }
+
+    img {
+        height: 400px;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="vh-60 bg-info">Height 60vh</div>
+        <div class="vh-60 bg-success text-light">Height 60vh</div>
+        <div class="vh-60 bg-primary text-light">Height 60vh</div>
+        <div class="row py-5">
+            <div class="col-3">
+                <img lazy-src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.6435-9/198273280_3698736073559920_6645623887592681998_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=qaWcECVGR8UAX8Ujycb&_nc_ht=scontent.fsgn2-1.fna&oh=650f31fa85aabfad96d882adf477dc0d&oe=619DA194" alt="" class="w-100">
+            </div>
+            <div class="col-3">
+                <img lazy-src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.6435-9/131080523_2875449142674411_5399719696944834103_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=174925&_nc_ohc=V5lxY72kkL0AX-jIHOn&_nc_ht=scontent.fsgn2-1.fna&oh=6a1c3b8e3e67e45c3b45c4006ab236e3&oe=619C619C" alt="" class="w-100">
+            </div>
+            <div class="col-3">
+                <img lazy-src="https://scontent.fsgn2-2.fna.fbcdn.net/v/t39.30808-6/246366940_350702016807747_4667404095141856368_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=825194&_nc_ohc=jWgPCRPc5MQAX8MV72X&tn=aNa2ue3mIymVT58_&_nc_ht=scontent.fsgn2-2.fna&oh=b3a93d1f80dbe66fda22935280be003a&oe=617C6B9B" alt="" class="w-100">
+            </div>
+            <div class="col-3">
+                <img lazy-src="https://scontent.fsgn2-2.fna.fbcdn.net/v/t1.6435-9/248394578_2023801074462292_6871287480846743335_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=825194&_nc_ohc=T6MIPusLh_kAX_NEYUe&tn=aNa2ue3mIymVT58_&_nc_ht=scontent.fsgn2-2.fna&oh=77166317ddec2f0f676b1a241f715524&oe=619DE3E1" alt="" class="w-100">
+            </div>
+        </div>
+        <div class="vh-60 bg-dark">Height 60vh</div>
+        <div class="vh-60 bg-success text-light">Height 60vh</div>
+        <div class="vh-60 bg-primary text-light">Height 60vh</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
